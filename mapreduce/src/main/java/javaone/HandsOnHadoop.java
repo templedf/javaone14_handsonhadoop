@@ -48,7 +48,7 @@ public class HandsOnHadoop extends Configured implements Tool {
     return job.waitForCompletion(true) ? 0 : 1;
   }
   
-  public class UsersMap extends Mapper<LongWritable, Text, IntWritable, Text> {
+  public static class UsersMap extends Mapper<LongWritable, Text, IntWritable, Text> {
     private IntWritable k = new IntWritable();
     private Text v = new Text();
     
@@ -64,7 +64,7 @@ public class HandsOnHadoop extends Configured implements Tool {
     }
   }
   
-  public class LoginsMap extends Mapper<LongWritable, Text, IntWritable, Text> {
+  public static class LoginsMap extends Mapper<LongWritable, Text, IntWritable, Text> {
     private final Pattern p = Pattern.compile(LOGIN);
     private IntWritable k = new IntWritable();
     private Text v = new Text();
@@ -83,7 +83,7 @@ public class HandsOnHadoop extends Configured implements Tool {
     }
   }
   
-  public class Reduce extends Reducer<IntWritable, Text, IntWritable, Text> {
+  public static class Reduce extends Reducer<IntWritable, Text, IntWritable, Text> {
     private Text v = new Text();
     
     @Override
