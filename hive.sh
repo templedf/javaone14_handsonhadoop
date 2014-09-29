@@ -13,4 +13,5 @@ if [ $? = 1 ]; then
   sudo rm -f /usr/lib/hive/conf/hive-site.xml
   sudo mv /tmp/hive-site.xml /usr/lib/hive/conf
   sudo chown root:root /usr/lib/hive/conf/hive-site.xml
+  sudo /etc/init.d/hive-server2 restart
 fi
