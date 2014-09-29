@@ -2,7 +2,7 @@
 
 grep hive.aux.jars.path /usr/lib/hive/conf/hive-site.xml >/dev/null 2>&1
 
-if [ $?=1 ]; then
+if [ $? = 1 ]; then
   sed -e '\#</configuration># i\
 \
   <property>\
