@@ -1,4 +1,4 @@
-javaone14_handsonhadoop
+handsonhadoop
 =======================
 
-The manual for the Hands-on Hadoop lab at JavaOne '14
+The manual for the Hands-on Hadoop lab
