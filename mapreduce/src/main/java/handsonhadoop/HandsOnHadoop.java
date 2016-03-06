@@ -1,4 +1,4 @@
-package javaone;
+package handsonhadoop;
 
 import java.io.IOException;
 import java.util.HashSet;
